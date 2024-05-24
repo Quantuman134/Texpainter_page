@@ -160,9 +160,9 @@
          <img src="static/images/method.png" alt="TexPainter method"/>
           <p>
           <em><strong>TexPainter Pipeline:</strong></em> Our modified multi-DDIM procedure that enforces multi-view consistency. Each view runs a separate denoising procedure using DDIM 
-          scheme. For each denoising step, DDIM predicts a latent code zzz for the \(i\)th view at 0th timestep. These 𝑧ˆ𝑖 0,𝑡 are decoded to 
-          the color space, yielding 𝑥ˆ𝑖 0,𝑡. We then blend these views into a common color-space texture image by weighted averaging. Next,
-          we perform an optimization to update 𝑧ˆ𝑖 0,𝑡 into 𝑧¯𝑖 0,𝑡 for all views, such that their decoded images match their corresponding 
+          scheme. For each denoising step, DDIM predicts a latent code \(\hat{z}_{0,t}^i\) for the \(i\)th view at 0th timestep. These \(\hat{z}_{0,t}^i\) are decoded to 
+          the color space, yielding \(\hat{x}_{0,t}^i\). We then blend these views into a common color-space texture image by weighted averaging. Next,
+          we perform an optimization to update \(\hat{z}_{0,t}^i\) into \(\bar{z}_{0,t}^i\) for all views, such that their decoded images match their corresponding 
           rendered views using the blended texture image. These updated latent codes are then plugged into DDIM to predict the next noise 
           level.
           </p>
