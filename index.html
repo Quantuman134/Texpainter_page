@@ -154,46 +154,25 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+
+<section class="section hero is-small  is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+         <img src="static/images/method.png" alt="TexPainter method"/>
+         <em><strong>TexPainter Pipeline:</strong></em> Our modified multi-DDIM procedure that enforces multi-view consistency. Each view runs a separate denoising procedure using DDIM 
+          scheme. For each denoising step, DDIM predicts a latent code 𝑧ˆ𝑖0,𝑡 for the 𝑖th view at 0th timestep. These 𝑧ˆ𝑖 0,𝑡 are decoded to 
+          the color space, yielding 𝑥ˆ𝑖 0,𝑡. We then blend these views into a common color-space texture image by weighted averaging. Next,
+          we perform an optimization to update 𝑧ˆ𝑖 0,𝑡 into 𝑧¯𝑖 0,𝑡 for all views, such that their decoded images match their corresponding 
+          rendered views using the blended texture image. These updated latent codes are then plugged into DDIM to predict the next noise 
+          level.
+        </div>  
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
 </div>
-</div>
 </section>
-<!-- End image carousel -->
-
-
 
 
 <!-- Youtube video -->
@@ -252,32 +231,6 @@
 
 
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
 
 
   <footer class="footer">
